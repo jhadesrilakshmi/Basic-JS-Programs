@@ -1,6 +1,7 @@
-let num=1234;
+let num=5678;
 let rev=0;
-for(let i=num;i>0;i=Math.floor(i/10)){
-    rev=rev*10+i%10;
+for(;num>0;num=Math.floor(num/10)){
+    let rem=num%10;
+    rev=rev*10+rem;
 }
 console.log(rev);
